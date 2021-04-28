@@ -16,7 +16,6 @@ class TestUserAddToBasketFromProductPage():
         email = str(time.time()) + "@fakemail.org"
         login_page.register_new_user(email, '123456712')
         login_page.should_be_authorized_user()
-        yield
 
     @pytest.mark.need_review
     def test_user_can_add_product_to_basket(self, browser):
