@@ -72,7 +72,7 @@ def test_guest_cant_see_success_message_after_adding_product_to_basket(browser, 
 def test_guest_cant_see_success_message(browser, link):
     page = ProductPage(browser, link)
     page.open()
-    page.check_guest_cant_see_success_message
+    page.check_guest_cant_see_success_message()
 
 
 @pytest.mark.xfail
