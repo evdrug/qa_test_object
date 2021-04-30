@@ -24,10 +24,6 @@ class ProductPage(BasePage):
         assert self.is_not_element_present(*ProductPageLocators.MESSAGES_ADD_BASKET), \
             'Element did not appear on the page'
 
-    def check_success_message_after_adding_product_to_basket(self):
-        assert self.is_not_element_present(*ProductPageLocators.MESSAGES_ADD_BASKET), \
-            'Element did not appear on the page'
-
     def check_guest_cant_see_success_message(self):
         assert self.is_not_element_present(*ProductPageLocators.MESSAGES_ADD_BASKET), \
             'Element that appeared on the page'
